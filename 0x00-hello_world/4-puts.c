@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <string.h>
-int main(){
+int main(void){
+	/* first programming in ala */
    
  puts("\"programming is like building a multilingual puzzle");
  
