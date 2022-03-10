@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(pust)
+gcc $CFILE echo "$(pust)"
