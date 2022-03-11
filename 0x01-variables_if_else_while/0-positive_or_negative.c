@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-int n = rand() % 100;
+int n = rand() % 100 + (-50);
 
 printf("%d", n);
 if (n > 0)
