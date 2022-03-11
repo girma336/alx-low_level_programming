@@ -1,9 +1,9 @@
 #include <stdio.h>
+/**
+ * main
+ * return to zero
+ */
 int main(void){
-	/* first programming in ala */
-   
- puts("\"Programming is like building a multilingual puzzle");
- 
-  return 0;
-
+puts("\"Programming is like building a multilingual puzzle");
+return 0;
 }
