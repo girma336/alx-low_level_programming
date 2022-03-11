@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-int n = rand();
+int n = rand() % 100;
 
-printf("%d", n % 100);
+printf("%d", n);
 if (n > 0)
 {
 printf(" is positive\n");
