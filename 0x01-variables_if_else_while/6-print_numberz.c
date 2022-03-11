@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-int n = 0;
-while (n <= 9)
+unsigned char n ='0';
+while (n <= '9')
 {
-write("%d", n);
+putchar(n);
 n++;
 }
 printf("\n");
