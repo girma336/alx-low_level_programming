@@ -6,11 +6,17 @@
  */
 int main(void)
 {
-int n = 0;
-while (n <= 16)
+char n = '0';
+char ch = 'a';
+while (n <= '9')
 {
 putchar(n);
 n++;
+}
+while (ch <= 'f')
+{
+putchar(ch);
+ch++;
 }
 printf("\n");
 return (0);
