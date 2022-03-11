@@ -7,14 +7,22 @@
 int main(void)
 {
 int n = rand();
-if(n>0){
-printf("is positive");
+
+     printf("%d",n);
+
+if(n>0)
+{
+
+	printf(" is positive\n");
 }
-else if(n==0){
-printf("is zero");
+else if(n==0)
+{
+
+	printf(" is zero\n");
 }
 else
-printf("is negative");
-return 0;
 
+        printf(" is negative\n");
+
+return (0);
 }
