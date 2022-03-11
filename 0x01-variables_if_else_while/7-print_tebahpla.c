@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-int n = 0;
-while (n <= 9)
+char ch = 'z';
+while (ch >= 'a')
 {
-write("%d", n);
-n++;
+putchar(ch);
+ch--;
 }
 printf("\n");
 return (0);
