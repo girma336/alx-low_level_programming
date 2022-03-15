@@ -8,7 +8,7 @@ int main(void)
 {
 int i = 0;
 char ch[] = "_putchar";
- while (isprint(ch[i]))
+while (isprint(ch[i]))
 {
 _putchar(ch[i]);
 i++;
