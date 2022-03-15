@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 #include <ctype.h>
 /**
  *main-Entry pointer
@@ -10,10 +10,10 @@ int main(void)
   char ch[]="_putchar";
   while(isprint(ch[i]))
     {
-      putchar(ch[i]);
+      _putchar(ch[i]);
       i++;
     }
-  putchar('\n');
+  _putchar('\n');
   return (0);
 }
   
