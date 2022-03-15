@@ -14,7 +14,7 @@ int main(void)
 		sum = x + y;
 		x = y;
 		y = sum;
-		if (i == 96)
+		if (i == 95)
 			printf("%lu\n", x);
 	}
 	return (0);
