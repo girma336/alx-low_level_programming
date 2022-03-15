@@ -14,8 +14,9 @@ else if (n == 0)
 {
 n = 0;
 }
-else {
+else
+{
 n *= -1;
 }
- return (n);
+return (n);
 }
