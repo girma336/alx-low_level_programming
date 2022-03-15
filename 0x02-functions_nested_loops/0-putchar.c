@@ -6,14 +6,14 @@
  */
 int main(void)
 {
-  int i = 0;
-  char ch[]="_putchar";
-  while(isprint(ch[i]))
-    {
-      _putchar(ch[i]);
-      i++;
-    }
-  _putchar('\n');
-  return (0);
+int i = 0;
+char ch[]="_putchar";
+while(isprint(ch[i]))
+{
+_putchar(ch[i]);
+i++;
+}
+_putchar('\n');
+return (0);
 }
   
