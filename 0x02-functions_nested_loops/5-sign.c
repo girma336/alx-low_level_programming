@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- *print_sign: check the sign 
- *@c: case
+ *print_sign- sign of number
+ *@n: input.
  *Return: if n greter than 0 +
- *and 0 is ewual to 0 
+ *and 0 is equal to 0
+ *-1 and print - if n<0
  */
 int print_sign(int n)
 {
