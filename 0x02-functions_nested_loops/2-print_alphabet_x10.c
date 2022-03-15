@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *print_alphabet- abcd
+ *print_alphabet_x10 - abcd
  *Description: print lowercase letter
  *Return: Void .
  */
