@@ -1,15 +1,15 @@
 #include "main.h"
 /**
  *_isupper- Entry point
- *@c: int.
  *Return:1 if c is uppercase
+ *otherwise 0
  */
 int _isupper(int c)
 {
 char ch = 'A';
-while ( ch <= 'z')
+while (ch <= 'Z')
 {
-if (ch == c)
+if (c == ch)
 {
 return (1);
 }
