@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  *print_line-print line
- *@c: void.
- *Return: print number of _
+ *
+ *Return:print number of
  */
 void print_line(int n)
 {
