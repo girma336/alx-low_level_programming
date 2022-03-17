@@ -1,9 +1,7 @@
 #include "main.h"
 /**
  *_isupper- Entry point
- *@c: int.
  *Return:1 if c is uppercase
- *else 0
  */
 int _isupper(int c)
 {
@@ -14,7 +12,10 @@ if (ch == c)
 {
 return (1);
 }
+else
+{
 return (0);
+}
 ch++;
 }
 return (0);
