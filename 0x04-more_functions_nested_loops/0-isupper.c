@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  *_isupper- Entry point
+ *@c: int.
  *Return:1 if c is uppercase
  */
 int _isupper(int c)
