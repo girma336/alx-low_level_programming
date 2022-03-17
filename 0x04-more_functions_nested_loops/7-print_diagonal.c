@@ -3,6 +3,7 @@
  *print_diagonal- diagonal
  *@c: void.
  *Return: the diagonal of given input
+ *when n is less and equal to zero print new line
  */
 void print_diagonal(int n)
 {
@@ -12,6 +13,8 @@ if (n <= 0)
 {
 _putchar('\n');
 }
+else
+{
 for (i = 0; i < n; i++)
 {
 for (j = 0; j < n; j++)
@@ -20,11 +23,12 @@ if (i == j)
 {
 _putchar(ch);
 }
-else
+else if (j < i)
 {
 _putchar(' ');
 }
 }
 _putchar('\n');
+}
 }
 }
