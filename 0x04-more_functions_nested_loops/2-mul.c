@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *mul- the number.
+ *mul-the number.
  *@c: int.
  *Return:Always 0 (success)
  *multipllication of two number
