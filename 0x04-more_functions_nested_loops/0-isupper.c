@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *_isupper- Entry point
- *@c: char
+ *@c: int.
  *Return:1 if c is uppercase
  *else 0
  */
