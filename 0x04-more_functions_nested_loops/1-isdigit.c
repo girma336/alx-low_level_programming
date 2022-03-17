@@ -6,8 +6,8 @@
  */
 int _isdigit(int c)
 {
-char ch = '0';
-while (ch <= '9')
+int ch = 48;
+while (ch <= 57)
 {
 if (ch == c)
 {
