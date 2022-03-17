@@ -6,14 +6,17 @@
  */
 int _isdigit(int c)
 {
-int ch = 48;
-while (ch <= 57)
+char ch = '0';
+while (ch <= '9')
 {
 if (ch == c)
 {
 return (1);
 }
+else
+{
 return (0);
+}
 }
 return (0);
 }
