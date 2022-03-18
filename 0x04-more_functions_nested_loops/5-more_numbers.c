@@ -16,5 +16,5 @@ for (ch = 48; ch <= 52; ch++)
 _putchar('1');
 _putchar(ch);
 }
-_putchar('\n');
+printf('\n');
 }
