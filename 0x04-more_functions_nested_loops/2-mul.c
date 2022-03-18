@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *mul-the number
+ *mul-a and b number
  *Return:multiplication of two num
  */
 int mul(int a, int b)
