@@ -8,18 +8,7 @@
  */
 int _isupper(int c)
 {
-char ch = 'A';
-while (ch <= 'Z')
-{
-if (c == ch)
-{
+if (c >= 65 && c <= 90)
 return (1);
-}
-else
-{
-return (0);
-}
-ch++;
-}
 return (0);
 }
