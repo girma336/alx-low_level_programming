@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  *print_square- size of squar
+ *@size: int.
  *Return: if size 0 or lessthan 0 newline
  *else print #
  */
