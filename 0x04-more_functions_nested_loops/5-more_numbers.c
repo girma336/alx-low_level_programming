@@ -6,15 +6,21 @@
  */
 void more_numbers(void)
 {
-int ch;
-for (ch = 48; ch <= 57; ch++)
+int ch, i;
+for (i = 0; i < 10; i++)
 {
-_putchar(ch);
-}
-for (ch = 48; ch <= 52; ch++)
+for (ch = 0; ch <= 14; ch++)
 {
-_putchar('1');
-_putchar(ch);
+if (ch >= 10)
+{
+_putchar('0' + ch / 10);
+_putchar('0' + ch % 10);
 }
-printf('\n');
+else
+{
+_putchar('0' + ch);
+}
+}
+_putchar('\n');
+}
 }
