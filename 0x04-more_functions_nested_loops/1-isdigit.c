@@ -6,17 +6,7 @@
  */
 int _isdigit(int c)
 {
-char ch = '0';
-while (ch <= '9')
-{
-if (ch == c)
-{
+if (c >= '0' && c <= '9')
 return (1);
-}
-else
-{
-return (0);
-}
-}
 return (0);
 }
