@@ -7,7 +7,6 @@
  */
 void print_line(int n)
 {
-int n;
 char ch = 95;
 if (n <= 0)
 {
