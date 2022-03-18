@@ -2,8 +2,7 @@
 #include <stdio.h>
 /**
  *mul-the number
- *Return:Always 0 (success)
- *multipllication of two number
+ *Return:multiplication of two num
  */
 int mul(int a, int b)
 {
