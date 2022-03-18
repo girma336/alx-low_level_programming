@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *print_line-print_line.
- *@n: int.
+ *@n: void.
  *n the number of input
  *Return:if n is greater than zero to print line of underscore
  */
