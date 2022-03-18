@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *more_numbers-print 14 number
- *@c: vode.
+ *more_numbers- print 14 number
+ *@void:
  *Return:the number 0 to 14
  */
 void more_numbers(void)
