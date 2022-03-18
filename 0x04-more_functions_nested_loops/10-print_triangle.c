@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- *void print_triangle-the hash
+ *print_triangle-the hash
+ *@size: int.
  *return:the hash
  */
 void print_triangle(int size)
