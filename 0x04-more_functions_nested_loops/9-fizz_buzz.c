@@ -20,7 +20,7 @@ else if (i % 5 == 0)
 
 printf("Buzz\t");
 else
-printf("%d ", i);
+printf("%d\t", i);
 }
 printf("\n");
 return (0);
