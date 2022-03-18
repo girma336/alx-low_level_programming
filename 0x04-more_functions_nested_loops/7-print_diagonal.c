@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *print_diagonal- diagonal
- *@c: void.
+ *@n:int.
  *Return: the diagonal of given input
  *when n is less and equal to zero print new line
  */
