@@ -1,11 +1,13 @@
 #include "main.h"
 /**
  *print_line-print_line.
- *void.
+ *@n: int.
+ *n the number of input
  *Return:if n is greater than zero to print line of underscore
  */
 void print_line(int n)
 {
+int n;
 char ch = 95;
 if (n <= 0)
 {
