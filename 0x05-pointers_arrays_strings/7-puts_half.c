@@ -10,8 +10,9 @@ void puts_half(char *str)
 {
 
 int len = strlen(str);
-int i;
-for (i = len / 2; i <= len; i++)
+ int i, mid;
+ mid = len / 2;
+for (i = mid; i <= len - 1; i++)
 {
 putchar(str[i]);
 }
