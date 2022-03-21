@@ -1,0 +1,17 @@
+#include "main.h"
+/**
+ *_strlen- find lenght of the string
+ *@s:char.
+ *Return:Always 0 length.
+ */
+int _strlen(char *s)
+{
+int len = 0;
+while (*s != '\0')
+{
+len++;
+s++;
+}
+return (len);
+return (0);
+}
