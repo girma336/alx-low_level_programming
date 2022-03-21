@@ -8,13 +8,26 @@
  */
 void print_rev(char *s)
 {
-  int i, c;
-  int len = strlen(s);
-  for (i = 0; i < len / 2; i++)
-{
-c = s[i];
-s[i] = s[len - 1 - i];
-s[len - 1 - i] = c;
-}  
-  puts(s);   
+  char* word_begin = s;
+ 
+    // Word boundary
+    char* temp = s;
+ 
+    // Reversing individual words as
+    // explained in the first step
+    while (*temp) {
+        temp++;
+        if (*temp == '\0') {
+            reverse(word_begin, temp - 1);
+        }
+        else if (*temp == ' ') {
+            reverse(word_begin, temp - 1);
+            word_begin = temp + 1;
+        }
+    }
+ 
+    // Reverse the entire string
+    reverse(s, temp - 1);
+}
+    
 }

@@ -1,19 +1,11 @@
 #include "main.h"
+#include <stdio.h>
 /**
- *_puts- character 
+ *_puts- character
  *@str:char.
  *Return:the char
  */
 void _puts(char *str)
 {
-  int len = 0;
- 
-  while (*str != '\0')
-    {
-      _puts(str);
-      len++;
-      
-     
-    }
-    
+puts(str);
 }
