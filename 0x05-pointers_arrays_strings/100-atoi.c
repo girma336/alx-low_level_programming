@@ -9,21 +9,7 @@
  */
 int _atoi(char *s)
 {
-  int num = atoi(s);
-  int sign = 1;
-  
-  int i;
-  for (i = 0; s[i] != '\0'; ++i)
-    
-    {
-      if (s[i] == '-')
-	{
-	  sign = -1;
-	  i++;
-	}
-    }
-      return (sign * num);
-    
-    
-  return (0);
+int num = atoi(s);
+return (num);
+return (0);
 }
