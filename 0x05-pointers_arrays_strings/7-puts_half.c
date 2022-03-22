@@ -13,8 +13,13 @@ int len = strlen(str);
 int i, mid;
 
 if (len % 2 != 0)
-len -= 1;
+{
+mid = (len - 1) / 2;
+}
+else
+{
 mid = len / 2;
+}
 for (i = mid; i <= len - 1; i++)
 {
 putchar(str[i]);
