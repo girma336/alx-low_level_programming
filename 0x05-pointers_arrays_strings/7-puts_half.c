@@ -16,6 +16,5 @@ for (i = mid; i <= len - 1; i++)
 {
 putchar(str[i]);
 }
-putchar('\0');
 putchar('\n');
 }
