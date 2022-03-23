@@ -1,0 +1,15 @@
+#include "main.h"
+#include <ctype.h>
+#include <string.h>
+
+/**
+ *string_toupper-change to uppe char 
+ *Return:char
+ */
+char *string_toupper(char *)
+{
+  char *ptr;
+ ptr = strtok(,":");
+  
+  ptr = toupper(ptr);
+}
