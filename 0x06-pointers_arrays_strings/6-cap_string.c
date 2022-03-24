@@ -18,7 +18,8 @@ ch = str[i];
 str[i] = (toupper(ch));
 
 }
-if (str[i] == '.' || str[i] == ' ' || str[i] == '(' || str[i] == ')' || str[i] == '}' || str[i] == '{' || str[i] == '"' || str[i] == ';' || str[i] == ',' || str[i] == '!' || str[i] == 11 || str[i] == 9 || str[i] == '?')
+
+if (str[i] == '.' || str[i] == ' ' || str[i] == '\n' || str[i] == 9)
 {
 ++i;
 if (str[i] >= 'a' && str[i] <= 'z')
