@@ -1,22 +1,22 @@
 #include "main.h"
 #include <ctype.h>
 #include <string.h>
+#include <stdio.h>
 
 /**
- *string_toupper-change to uppe char 
+ *string_toupper-change to uppe char
+ *@str:char
  *Return:char
  */
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
-unsigned long int s_len = strlen(s); 
-    char s_up[s_len]; 
-    int a;
-    for (a = 0; a < s_len; a++)
-    {
-        
-        s_up[a] = toupper(s[a]); 
-    }
-    s = s_up;
-
-    printf("%s \n", s_up);
+char ch;
+int i = 0;
+while (str[i])
+{
+ch = str[i];
+str[i] = (toupper(ch));
+i++;
+}
+return (str);
 }
