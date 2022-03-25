@@ -6,7 +6,7 @@
  *@s:char
  *Return:char
  */
-char *leet(char *s)
+char *leet(char *)
 {
 
 int i = 0;
