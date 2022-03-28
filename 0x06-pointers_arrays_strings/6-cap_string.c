@@ -9,39 +9,27 @@
 char *cap_string(char *str)
 {
 char ch;
-int i = 0;
-while (str[i] != '\0')
+char lt[13] = {' ', '\t', '\n', '!', '?', '"',
+	     '{', '}', '(', ')', '.', ',', ';'};
+int j, i;
+for (i = 0; str[i] != '\0'; i++)
 {
-if (i == 0)
-{
-ch = str[i];
-str[i] = (toupper(ch));
-
-}
-
-if (str[i] == '.' || str[i] == ' ' || str[i] == '\n' || str[i] == 9)
-if (str[i] == '.' || str[i] == ' ' || str[i] == '\n' || str[i] == 9)
-if (str[i] == '.' || str[i] == ' ' || str[i] == '\n' || str[i] == 9)  
-if (str[i] == '.' || str[i] == ' ' || str[i] == '\n' || str[i] == 9)
-{
-++i;
-if (str[i] >= 'a' && str[i] <= 'z')
+if (i == 0 && str[i] >= 'a' && str[i] <= 'z')
 {
 ch = str[i];
 str[i] = (toupper(ch));
 }
-
-else
+for (j = 0; j < 13; j++)
 {
-if (str[i] >= 'A' && str[i] <= 'Z')
+if (str[i] == lt[j])
 {
-ch = str[i];
-str[i] = (tolower(ch));
-
+if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
+{
+ch = str[i + 1];
+str[i + 1] = (toupper(ch));
 }
 }
 }
-i++;
 }
 return (str);
 }
