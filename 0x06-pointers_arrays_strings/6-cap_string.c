@@ -20,6 +20,9 @@ str[i] = (toupper(ch));
 }
 
 if (str[i] == '.' || str[i] == ' ' || str[i] == '\n' || str[i] == 9)
+if (str[i] == '.' || str[i] == ' ' || str[i] == '\n' || str[i] == 9)
+if (str[i] == '.' || str[i] == ' ' || str[i] == '\n' || str[i] == 9)  
+if (str[i] == '.' || str[i] == ' ' || str[i] == '\n' || str[i] == 9)
 {
 ++i;
 if (str[i] >= 'a' && str[i] <= 'z')
