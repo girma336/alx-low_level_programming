@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *_memcpy-copy the memset char
+ *_memcpy-the memset char
  *@dest:char
  *@src:char
  *@n:unsigned int
- *Retuen: char
+ *Return: char
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
