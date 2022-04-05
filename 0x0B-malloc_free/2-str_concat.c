@@ -17,9 +17,9 @@ k = 0;
 m = 0;
 if (s1 == NULL && s2 == NULL)
 return (NULL);
-while (s1[i])
+while (s1 && s1[i])
 i++;
-while (s2[j])
+while (s2 && s2[j])
 j++;
 cat = malloc(sizeof(char) * (j + i + 1));
 if (cat == NULL)
