@@ -68,6 +68,6 @@ c = 0;
 else if (c++ == 0)
 s = i;
 }
-matrix[k] = '\0';
+matrix[k] = NULL;
 return (matrix);
 }
