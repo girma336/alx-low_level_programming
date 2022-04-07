@@ -15,9 +15,9 @@ char *s3;
 unsigned int i = 0, j = 0, l1 = strlen(s1), l2 = strlen(s2);
 
 if (n < l2)
-s3 = malloc(sizeof(char) * (l1 * n + 1));
+s3 = malloc(sizeof(char) * (l1 * n));
 else
-s3 = malloc(sizeof(char) * (l1 * l2 + 1));
+s3 = malloc(sizeof(char) * (l1 * l2));
 if (s3 == NULL)
 return (NULL);
 
