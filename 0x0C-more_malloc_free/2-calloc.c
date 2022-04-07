@@ -1,0 +1,37 @@
+#include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+/**
+ *newset-function call
+ *@s:char
+ *@b:char
+ *@n:unsigned int
+ *Return:char
+ */
+char *newset(char *s, char b, unsigned int n)
+{
+unsigned int i;
+for (i = 0; i < n; i++)
+{
+s[i] = b;
+}
+return (s);
+}
+/**
+ *_calloc-to creat hex(unsigned int
+ *@nmemb:unsigned int
+ *@size:unsigned int
+ *Return:void
+ */
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+char *p;
+if (nmemb == 0 || size == 0)
+return (NULL);
+p = malloc(size * nmemb);
+if (p == 0)
+return (NULL);
+newset(p, 0, nmemb * size);
+return (p);
+}
