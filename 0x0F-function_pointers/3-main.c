@@ -37,7 +37,7 @@ printf("Error\n");
 exit(100);
 }
 
-result = func(i ,j);
+result = func(i, j);
 printf("%d\n", result);
 return (0);
 }
