@@ -6,8 +6,6 @@
  *print_all-prit all data type inputs
  *@format:int
  */
-
-
 void print_all(const char * const format, ...)
 {
 int i = 0;
@@ -34,7 +32,7 @@ printf("%s%f", sep, va_arg(ap, double));
 break;
 case 's':
 str = va_arg(ap, char *);
-if(!str)
+if (str == NULL)
 str = "(nil)";
 printf("%s%s", sep, str);
 break;
