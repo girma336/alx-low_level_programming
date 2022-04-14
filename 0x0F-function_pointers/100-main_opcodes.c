@@ -10,31 +10,31 @@
 
 int main(int argc, char *argv[])
 {
-int i, j;
+int bytes, j;
 char *ar;
 
-if (argc < 2 || argc > 2)
+if (argc != 2)
 {
 printf("Error\n");
 exit(1);
 }
 
-i = atoi(argv[1]);
+bytes = atoi(argv[1]);
 
-if (i < 0)
+if (bytes < 0)
 {
 printf("Error\n");
 exit(2);
 }
 ar = (char *)main;
-for (j = 0; j < i; j++)
+for (j = 0; j < bytes; j++)
 {
-if (j == i - 1)
+if (j == bytes - 1)
 {
 printf("%02hhx\n", ar[j]);
 break;
 }
-printf("%02hhx", ar[j]);
+printf("%02hhx ", ar[j]);
 }
 return (0);
 }
