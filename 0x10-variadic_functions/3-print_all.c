@@ -1,48 +1,118 @@
 #include "variadic_functions.h"
-#include <stdarg.h>
 #include <stdio.h>
-#include <string.h>
+#include <stdarg.h>
+
+
 /**
- *print_all-prit all data type inputs
- *@format:int
- */
+ * print_char - print a char
+ *
+ * @arg: a list of argument pointing
+ *      to the character to be printed
+ *
+ * Return: nothing
+*/
+
+void print_char(va_list arg)
+{
+	char c = va_arg(arg, int);
+
+	printf("%c", c);
+}
+
+/**
+ * print_int - print an integer
+ *
+ * @arg: a list of argument pointing
+ *      to the character to be printed
+ *
+ * Return: nothing
+*/
+
+void print_int(va_list arg)
+{
+	int n = va_arg(arg, int);
+
+	printf("%d", n);
+}
+
+/**
+ * print_float - print a float
+ *
+ * @arg: a list of argument pointing
+ *      to the character to be printed
+ *
+ * Return: nothing
+*/
+
+void print_float(va_list arg)
+{
+	float n = va_arg(arg, double);
+
+	printf("%f", n);
+}
+
+/**
+ * print_string - print a string
+ *
+ * @arg: a list of argument pointing
+ *      to the character to be printed
+ *
+ * Return: nothing
+*/
+
+void print_string(va_list arg)
+{
+	char *str = va_arg(arg, char *);
+
+	if (str == NULL)
+	{
+		printf("(nil)");
+		return;
+	}
+	printf("%s", str);
+}
+
+/**
+ * print_all - a function that prints anything
+ *
+ * @format: A string of character representing
+ *          the argument types
+ *
+ * Description: If any argument not of type char,
+ *              int, float or char * is ignored
+ *
+ * Return: nothing
+*/
+
 void print_all(const char * const format, ...)
 {
-char *str = NULL;
-char c;
-int i;
-va_list ap;
-va_start(ap, format);
- 
-while (format[i] != '\0')
-{
-c = format[i];
-if (i != 0 && (c == 'c' || c == 'i' || c == 'f' || c == 's'))
-printf(", ");
-switch (c)
-{
-case 'c':
-printf("%c", va_arg(ap, int));
-break;
-case 'i':
-printf("%d", va_arg(ap, int));
-break;
-case 'f':
-printf("%f", va_arg(ap, double));
-break;
-case 's':
-str = va_arg(ap, char *);
-  
-if (str == NULL)
-{
-printf("(nil)");
-continue;
-}
-printf("%s", str);
-break;
-}
-i++;
-}
-printf("\n");
-va_end(ap);
+	va_list ap;
+	int i = 0, j = 0;
+	char *separator = "";
+	func_printer funcs[] = {
+		{"c", print_char},
+		{"i", print_int},
+		{"f", print_float},
+		{"s", print_string}
+	};
+
+	va_start(ap, format);
+
+	while (format && format[i])
+	{
+		j = 0;
+	        
+		while (j < 4 && (format[i] != *(funcs[j].symbol)))
+			j++;
+		if (j < 4)
+		{
+			printf("%s", separator);
+			funcs[j].print_func(ap);
+			separator = ", ";
+		}
+		i++;
+	}
+	printf("\n");
+
+	va_end(ap);
 }
