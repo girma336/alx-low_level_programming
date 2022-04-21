@@ -3,7 +3,7 @@
 
 
 /**
- *frist-print a statment before the main
+ *premain-print a statment before the main
  *function void
  */
 void __attribute__ ((constructor)) premain()
