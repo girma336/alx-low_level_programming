@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-void first(void) __attribute__ ((constructor));
+
 
 /**
  *frist-print a statment before the main
  *function void
  */
-void frist(void)
+void __attribute__ ((constructor)) premain()
 {
 printf("You're beat! and yet, you must allow,\n");
 printf("I bore my house upon my back!\n");
