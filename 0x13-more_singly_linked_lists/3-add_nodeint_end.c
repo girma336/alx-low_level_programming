@@ -13,7 +13,7 @@ listint_t *last;
 
 tmp = malloc(sizeof(listint_t));
 if (tmp == NULL)
-printf("Error\n");
+return (0);
 
 last = *head;
 
