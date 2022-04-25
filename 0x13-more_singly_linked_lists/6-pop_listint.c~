@@ -1,0 +1,21 @@
+#include "lists.h"
+/**
+ *pop_listint-delet at the beginnig
+ *@head:char
+ *Return:int
+ */
+int pop_listint(listint_t **head)
+{
+listint_t *temp;
+int i;
+temp = malloc(sizeof(listint_t));
+if (head == NULL || !*head)
+return (0);
+
+i = (*head)->n;
+temp = (*head)->next;
+free(head);
+*head = temp;
+ 
+return (i);
+}
