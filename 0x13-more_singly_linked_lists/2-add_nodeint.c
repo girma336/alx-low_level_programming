@@ -14,7 +14,7 @@ tmp = malloc(sizeof(listint_t));
 
 if (tmp == NULL)
 {
-printf("Error\n");
+return (0);
 }
 tmp->n = n;
 tmp->next = *head;
