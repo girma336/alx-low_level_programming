@@ -1,0 +1,22 @@
+#include "lists.h"
+
+/**
+ *sum_listint-print the sum of the
+ *@head:pointer of the first node
+ *Return:int
+ */
+
+void sumOf(listint_t *head, int *sum)
+{
+if (!head)
+return;
+sumOf(head->next, sum);
+*sum = *sum + head->n;
+}
+
+int sum_listint(listint_t *head)
+{
+int sum = 0;
+sumOf(head, &sum);
+return (sum);
+}
