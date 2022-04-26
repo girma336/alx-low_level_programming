@@ -19,7 +19,7 @@ if (diff > 0)
 head = head->next;
 else
 {   
-printf("->[%p] %d\n", (void *)head->next, head->next->n);
+printf("-> [%p] %d\n", (void *)head->next, head->next->n);
 break;
 }
 }
