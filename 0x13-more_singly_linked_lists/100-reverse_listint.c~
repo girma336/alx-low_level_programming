@@ -1,0 +1,30 @@
+#include "lists.h"
+
+/**
+ *reverse_listint-print the reverse order
+ *@head:pointer of first node
+ *Return:listint
+ */
+
+listint_t *reverse_listint(listint_t **head)
+{
+listint_t *current = *head;
+listint_t *new = NULL;
+listint_t *prv = NULL;
+
+if (!head)
+return (NULL);
+
+while (current != NULL)
+{
+new = current->next;
+current->next = prv;
+prv = current;
+current = new;
+}
+
+if (new != NULL)
+head->next = reverse_listint(new);
+return (prv);
+}
+
