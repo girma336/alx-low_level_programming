@@ -8,20 +8,20 @@
 
 void print_binary(unsigned long int n)
 {
-int i; count = 0;
+int i, count = 0;
 unsigned long int new;
-for (i = 63; i >=0; i--)
+for (i = 63; i >= 0; i--)
 {
 new = n >> i;
 
 if (new & 1)
 {
-putchar('1');
+_putchar('1');
 count++;
 }
 else if (count)
-putchar('0');
+_putchar('0');
 }
 if (!count)
-putchar('0');
+_putchar('0');
 }
