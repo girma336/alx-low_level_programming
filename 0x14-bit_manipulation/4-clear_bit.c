@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *clear_bit=clear bit
+ *clear_bit-clear bit
  *@n:int
  *@index:int
  *Return:int
