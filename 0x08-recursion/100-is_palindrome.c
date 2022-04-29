@@ -1,0 +1,46 @@
+#include "main.h"
+#include <stdio.h>
+int check_palindrome(char *s, int i, int n);
+int lenOf_st(char *s);
+/**
+ *is_palindrome-show the string pandrom or not
+ *@s:char
+ *Return:int
+ */
+int is_palindrome(char *s)
+{
+if (*s == 0)
+return (1);
+return (check_palindrome(s, 0, lenOf_st(s)));
+}
+/**
+ *lenOf_st-get the lengthof string
+ *@s:char
+ *Return:the value of string lrngth
+ */
+
+int lenOf_st(char *s)
+{
+if (*s == '\0')
+{
+return (0);
+}
+return (1 + lenOf_st(s + 1));
+}
+/**
+ *check_palindrome-main function for this
+ *@s:char
+ *@i:int
+ *@n:len of char
+ *Return:int
+ */
+
+int check_palindrome(char *s, int i, int n)
+{
+if (*(s + i) != *(s + n - 1))
+return (0);
+if (i >= n)
+return (1);
+
+return (check_palindrome(s, i + 1, n - 1));
+}
