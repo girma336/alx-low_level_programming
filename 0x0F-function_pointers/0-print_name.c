@@ -1,12 +1,10 @@
 #include "function_pointers.h"
-#include <stdio.h>
 /**
- *print_name-print name using function pointer
+ *print_name-printthe name of input
  *@name:char
- *@f:function pointer char
+ *@s:pointer function
  */
-
-void print_name(char *name, void (*f)(char *))
+void print_name(char *name, void (*f)(char *s))
 {
-f(name);
+  f(name);
 }
