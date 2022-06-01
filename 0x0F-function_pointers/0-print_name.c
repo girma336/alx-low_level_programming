@@ -6,5 +6,7 @@
  */
 void print_name(char *name, void (*f)(char *s))
 {
+if (!name || !f)
+return;
 f(name);
 }
