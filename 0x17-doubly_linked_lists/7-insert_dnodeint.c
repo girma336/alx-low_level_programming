@@ -3,19 +3,19 @@
 /**
  *insert_dnodeint_at_index- insert at a given node
  *@idx: index the given data can be inserted
- *@head: first node
+ *@h: first node
  *@n:new data can be inserted
  *Return: null the file can be failed
  */
 
-dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *new;
 	dlistint_t *current;
 
 	unsigned int i;
 
-	if (head == NULL)
+	if (h == NULL)
 		return (NULL);
 
 	new = malloc(sizeof(dlistint_t));
@@ -23,20 +23,24 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
 	if (new == NULL)
 		return (NULL);
 
-	if (idx == 0)
-		return (add_dnodeint(head, n));
+	new->n = n;
+	new->next = NULL;
+	new->prev = NULL;
 
-	current = (*head);
+	if (idx == 0)
+		return (add_dnodeint(h, n));
+
+	current = (*h);
 	for (i = 0; i < idx && current; i++)
 	{
 		if (i == idx - 1)
 		{
 			if (current->next == NULL)
-				return (add_dnodeint_end(head, n));
+				return (add_dnodeint_end(h, n));
 
-			new->next = current->next;
 			new->prev = current;
-			(current->next)->prev = new;
+			new->next = current->next;
+			current->next->prev = new;
 			current->next = new;
 
 			return (new);
